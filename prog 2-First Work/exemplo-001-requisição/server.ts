@@ -13,7 +13,7 @@ const server = Bun.serve({
         "/": index,
         "/time": () => new Response(getCurrentTimeBR())
     }
-}) 
+})
 
 console.log(`Server Running: ${server.port}`)
 
